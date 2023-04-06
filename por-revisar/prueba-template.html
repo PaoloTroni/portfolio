@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi sitio web</title>
+  </head>
+  <body>
+    <h1>Lista de productos</h1>
+
+    <!-- Template para representar cada producto -->
+    <template id="producto-template">
+      <div class="producto">
+        <h2 class="nombre"></h2>
+        <p class="descripcion"></p>
+        <p class="precio"></p>
+      </div>
+    </template>
+
+    <script>
+      // Datos de prueba para demostrar la carga dinámica de productos
+      const productos = [
+        {
+          nombre: "Producto 1",
+          descripcion: "Descripción del producto 1",
+          precio: "$100",
+        },
+        {
+          nombre: "Producto 2",
+          descripcion: "Descripción del producto 2",
+          precio: "$200",
+        },
+        {
+          nombre: "Producto 3",
+          descripcion: "Descripción del producto 3",
+          precio: "$300",
+        },
+        {
+          nombre: "hola hola caramboooola",
+          descripcion: "Descripción del producto 4",
+          precio: "$555500",
+        },
+      ];
+
+      // Obtener la plantilla de producto
+      const template = document.querySelector("#producto-template");
+
+      // Obtener el contenedor donde se van a agregar los productos
+      const contenedorProductos = document.createElement("div");
+
+      // Recorrer la lista de productos
+      productos.forEach((producto) => {
+        // Clonar la plantilla de producto
+        const clone = template.content.cloneNode(true);
+
+        // Actualizar los datos del producto clonado
+        const nombreElemento = clone.querySelector(".nombre");
+        nombreElemento.textContent = producto.nombre;
+
+        const descripcionElemento = clone.querySelector(".descripcion");
+        descripcionElemento.textContent = producto.descripcion;
+
+        const precioElemento = clone.querySelector(".precio");
+        precioElemento.textContent = producto.precio;
+
+        // Agregar el producto clonado al contenedor de productos
+        contenedorProductos.appendChild(clone);
+      });
+
+      // Agregar el contenedor de productos al documento
+      document.body.appendChild(contenedorProductos);
+    </script>
+  </body>
+</html>
