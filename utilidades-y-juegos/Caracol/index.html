@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../images/caracol-peq.png"
+      type="image/x-icon"
+    />
+    <title>Velocímetro de caracoles</title>
+    <script src="caracol.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Velocímetro para Caracoles</h1>
+    </header>
+
+    <main>
+      <section>
+        <p>
+          Hoy os vamos presentar un invento super-hiper-ultra-megarevolucionario
+          que cambiará vuestras vidas para siempre.
+        </p>
+
+        <p>
+          En el mundo actual todo va muy rápido, coches veloces 🚗 , trenes de
+          alta velocidad 🚅, aviones supersónicos ✈️ . Queremos saber cuando
+          vamos llegar a nuestro destino.
+        </p>
+
+        <p>
+          Cuando pones una ruta en tu aplicativo GPS, seguramente ese te dice
+          cuanto vas a tardar en tu viaje, pero quizás nunca has pensado que ni
+          todos tienen acceso a un GPS...
+        </p>
+        <p>
+          Hoy vamos ayudar a un caracol 🐌 a salir del fondo del pozo (que vida
+          dura de un caracol 😢). Tenemos que decirle cuando durará su viaje.
+        </p>
+      </section>
+      <section>
+        <p>
+          <strong>Vamos allá! </strong>Haz los cálculos y ayuda al pobre caracol
+          a saber cuando saldrá del pozo. Sabemos que:
+        </p>
+        <p>El caracol 🐌 sube 7 pasos durante el día y baja 2 por la noche.</p>
+        <p>
+          ¿Cuánto tardará el caracol en subir un pozo de una profundidad de
+          <strong id="profRandom"
+            >{Aqui el valor random de la profundidad del pozo}</strong
+          >
+          pasos?
+        </p>
+      </section>
+      <section>
+        <p>
+          <strong>Ejemplo: </strong>Si profundidadPozo es 32, el número de días
+          debería ser 6.
+        </p>
+
+        <ul>
+          <li>Día 1: 7-2=5</li>
+          <li>Día 2: 5+7-2=10</li>
+          <li>Día 3: 10+7-2=15</li>
+          <li>Día 4: 15+7-2=20</li>
+          <li>Día 5: 20+7-2=25</li>
+          <li>Día 6: 25+7=32</li>
+        </ul>
+        <p>
+          Puff...va a ser complicado. Por eso el pobre caracol nunca sale del
+          pozo:en lugar de caminar se queda pensando en cuantos pasos tiene que
+          dar cada día y no avanza.
+        </p>
+      </section>
+
+      <section>
+        <p>
+          Si a ti también te cuesta hacer ese cálculo, ¡no te quedes ahí parado
+          como el caracol! Puedes usar nuestro grande y revolucionario invento:
+          la
+          <strong>CALCULADORA DE VELOCIDAD DE CARACOLES! 😂</strong>
+        </p>
+        <p>
+          Los caracoles están muy interesados en ese invento pues no quieren
+          llevarse una multa por exceso de velocidad.
+        </p>
+      </section>
+      <section>
+        <p>
+          Al hacer click en el botón, se calculará automáticamente el tiempo
+          estimado de viaje del caracol con la profundidad especificada arriba.
+        </p>
+
+        <p>
+          También puedes especificar una profundidad diferente en la casilla.
+        </p>
+        <form>
+          <label for="profundidadPozo">Profundidad del pozo:</label>
+          <input id="profundidadPozo" value="" />
+        </form>
+        <button>Calcular tiempo estimado de viaje</button>
+        <p id="error" style="color: red"></p>
+        <p id="resultadoNumDia">
+          Considerando que el pozo tiene una profundidad de .... pasos, el
+          caracol tardará .... día(s) para subir el pozo.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>desrrollado por: paolotroni@gmail.com</p>
+      <a href="https://github.com/PaoloTroni" target="_blank">GitHub</a>
+      <a
+        href="https://www.linkedin.com/in/paolo-troni-developer/"
+        target="_blank"
+        >LinkedIn</a
+      >
+    </footer>
+  </body>
+</html>

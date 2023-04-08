@@ -4,43 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>APUNTES</title>
+    <title>Tareas y apuntes</title>
   </head>
   <body>
-    <main>
-      <h1>COSAS PENDIENTES</h1>
+    <header>
+      <h1>TAREAS Y APUNTES</h1>
       <br />
-      <ul>
-        <li>LIMPIAR EL CODIGO DEL ARCHIVO "DICEN SOBRE MI"</li>
-        <br />
+    </header>
+    <main style="display: flex; flex-direction: row">
+      <section id="pendiente" style="flex: 1">
+        <h2 style="display: flex; justify-content: center">pendiente</h2>
+
+        <ul>
+          <li>HEADER Y FOOTER HECHOS CON JS</li>
+          <br />
+          <li>
+            MIRAR DE HACER COLLAPSE EN LAS DIFERENTES SECCIONES DE LA PARTE
+            SOBRE MI
+            <a
+              href="https://www.w3schools.com/howto/howto_js_collapsible.asp"
+              target="_blank"
+            ></a>
+          </li>
+          <br />
+          <li>MIRAR COMO HACER UN TEMPLATE PARA PINTAR LOS DEMÁS PROYECTOS</li>
+          <br />
+          <li>HACER LA INDEX CON LOS IDIOMAS</li>
+          <br />
+          <li>HACER QUE EL MENU DE IDIOMAS RESPONDA COMO TIENE QUE SER</li>
+          <br />
+          <li>HACER EL CSS</li>
+        </ul>
+      </section>
+      <section
+        id="en-andamento"
+        style="
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+          flex: 1;
+        "
+      >
+        <h2 style="display: flex; justify-content: center">en andamento</h2>
         <li>
-          CREAR CONTENIDO DE LAS PÁGINAS:
+          CREAR Y ACTUALIZAR CONTENIDO DE LAS PÁGINAS:
           <ul>
-            <li>Proyectos futuros</li>
-            <li>Cosillas-divertidas</li>
-            <li>Otros proyectos</li>
+            <li style="text-decoration: line-through">Proyectos futuros</li>
+
+            <li>
+              Cosillas-divertidas
+              <ul>
+                <li style="text-decoration: line-through">
+                  Cambiar nombre a "Utilidades y juegos divertidos"
+                </li>
+                <li>Hacer o actualizar el código de las "cosillas"</li>
+                <ul>
+                  <li>Caracol - FALTA CSS</li>
+                  <li>Letra DNI</li>
+                  <li>Broma IPhone</li>
+                  <li>Adivinar el numero</li>
+                </ul>
+              </ul>
+            </li>
+            <li style="text-decoration: line-through">Otros proyectos</li>
+            <br />
+            <li>LIMPIAR EL CODIGO DEL ARCHIVO "DICEN SOBRE MI"</li>
+            <br />
           </ul>
         </li>
-        <br />
-        <li>HEADER Y FOOTER HECHOS CON JS</li>
-        <br />
-        <li>
-          MIRAR DE HACER COLLAPSE EN LAS DIFERENTES SECCIONES DE LA PARTE SOBRE
-          MI
-          <a
-            href="https://www.w3schools.com/howto/howto_js_collapsible.asp"
-            target="_blank"
-          ></a>
-        </li>
-        <br />
-        <li>MIRAR COMO HACER UN TEMPLATE PARA PINTAR LOS DEMÁS PROYECTOS</li>
-        <br />
-        <li>HACER LA INDEX CON LOS IDIOMAS</li>
-        <br />
-        <li>HACER QUE EL MENU DE IDIOMAS RESPONDA COMO TIENE QUE SER</li>
-        <br />
-        <li>HACER EL CSS</li>
-      </ul>
+      </section>
+      <section id="hecho" style="flex: 1">
+        <h2 style="display: flex; justify-content: center">hecho</h2>
+        <p>NADA AQUI DE MOMENTO</p>
+      </section>
     </main>
+    <footer>
+      <h2>apuntes:</h2>
+    </footer>
   </body>
 </html>
