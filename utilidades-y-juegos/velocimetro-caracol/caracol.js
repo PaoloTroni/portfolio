@@ -4,19 +4,19 @@ import { speakText } from "./speakText.js";
 
 ("use strict");
 
-//Generamos un valor random entre 1 y 999 y lo asignamos como profundidad del pozo.
+//Generamos un valor random entre 1 y 300 y lo asignamos como profundidad del pozo.
 
 // El proceso de generacion de ese número está "desglosado".
 // Lo óptimo sería hacerlo todo en una sola línea tal como descrito abajo:
-// const rofundidadPozo = Math.floor(Math.random() * 999 + 1);
+// const profundidadPozo = Math.floor(Math.random() * 301 + 1);
 
 const soloRandom = Math.random();
 console.log(soloRandom);
 
-const randomMult999 = soloRandom * 999;
-console.log(randomMult999);
+const randomMult301 = soloRandom * 301;
+console.log(randomMult301);
 
-const floorPlus1 = Math.floor(randomMult999) + 1;
+const floorPlus1 = Math.floor(randomMult301) + 1;
 console.log(floorPlus1);
 
 let profundidadPozo = floorPlus1;
@@ -47,8 +47,6 @@ button.addEventListener("click", () => {
 
   let pasos = 0;
 
-  console.log("inputProfundidad.value =", inputProfundidad.value);
-
   if (!inputProfundidad.value) {
     // Si no existe el valor de value en el formulario entoces asignamos el valor del .placeholder al .value
     inputProfundidad.value = inputProfundidad.placeholder;
@@ -61,14 +59,14 @@ button.addEventListener("click", () => {
   if (
     isNaN(profundidadPozo) ||
     profundidadPozo < 1 ||
-    profundidadPozo > 999 ||
+    profundidadPozo > 300 ||
     !Number.isInteger(profundidadPozo)
   ) {
-    // En el caso se pase un valor que no sea un número entero entre 1 y 999 (incluídos) se pintará un mensaje de error.
+    // En el caso se pase un valor que no sea un número entero entre 1 y 300 (incluídos) se pintará un mensaje de error.
     // Seleccionamos el <p id="error>" y pintamos el mensaje de error. En ese caso, un return corta el código.
     const pError = document.querySelector("#error");
     pError.textContent =
-      "La profundidad del pozo tiene que ser un número entero entre 1 y 999";
+      "La profundidad del pozo tiene que ser un número entero entre 1 y 300";
     return;
   } else {
     // en caso de que esté todo correcto no se pinta el mensaje de error y vaciamos el <p> en caso hubiera quedado el  mensaje de error de otra vez.
