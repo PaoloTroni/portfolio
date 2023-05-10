@@ -1,0 +1,69 @@
+body {
+  background-color: #1c2331;
+  min-width: 200px;
+  max-width: 600px;
+}
+
+header h1 {
+  font-size: 1.55rem;
+  text-align: center;
+  color: rgba(236, 236, 241);
+  font-family: "Courier New", Courier, monospace;
+}
+header p {
+  color: #add8e6;
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: "Courier New", Courier, monospace;
+}
+header img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+main {
+  margin-left: 1rem;
+}
+main p {
+  color: #add8e6;
+}
+main a {
+  color: rgba(236, 236, 241);
+  font-weight: 500;
+}
+.proyectos {
+  text-decoration: none;
+  list-style: none;
+}
+main ul li {
+  padding-bottom: 0.5rem;
+}
+footer {
+  border-top: 0.5px solid #add8e6;
+  text-align: center;
+}
+
+footer a {
+  vertical-align: middle;
+  color: rgba(236, 236, 241);
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+footer img {
+  vertical-align: middle;
+  height: auto;
+  border-radius: 100000px;
+}
+
+#linkedin {
+  width: 50px;
+  margin-left: 3rem;
+}
+#github {
+  width: 40px;
+  margin-left: 3rem;
+}
